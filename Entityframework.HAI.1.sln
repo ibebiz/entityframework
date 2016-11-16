@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entityframework.HAI.1", "Entityframework.HAI.1\Entityframework.HAI.1.csproj", "{B7C6F134-5E57-4C07-996B-5453950BE7BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{31C5ECE1-E0CB-47F3-BA74-78AA2AED06BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B7C6F134-5E57-4C07-996B-5453950BE7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7C6F134-5E57-4C07-996B-5453950BE7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7C6F134-5E57-4C07-996B-5453950BE7BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C5ECE1-E0CB-47F3-BA74-78AA2AED06BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C5ECE1-E0CB-47F3-BA74-78AA2AED06BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C5ECE1-E0CB-47F3-BA74-78AA2AED06BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C5ECE1-E0CB-47F3-BA74-78AA2AED06BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
