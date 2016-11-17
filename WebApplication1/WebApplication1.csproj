@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B7C6F134-5E57-4C07-996B-5453950BE7BD}</ProjectGuid>
+    <ProjectGuid>{B4EA905A-6E11-4EFE-A1E1-5992C2A7C7FC}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entityframework.HAI._1</RootNamespace>
-    <AssemblyName>Entityframework.HAI.1</AssemblyName>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -165,15 +165,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611170242235_Product DB.cs" />
-    <Compile Include="Migrations\201611170242235_Product DB.Designer.cs">
-      <DependentUpon>201611170242235_Product DB.cs</DependentUpon>
+    <Compile Include="Migrations\201611170450442_FirstMigration.cs" />
+    <Compile Include="Migrations\201611170450442_FirstMigration.Designer.cs">
+      <DependentUpon>201611170450442_FirstMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170453320_SecondMigration.cs" />
+    <Compile Include="Migrations\201611170453320_SecondMigration.Designer.cs">
+      <DependentUpon>201611170453320_SecondMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170456242_ThirdMigration.cs" />
+    <Compile Include="Migrations\201611170456242_ThirdMigration.Designer.cs">
+      <DependentUpon>201611170456242_ThirdMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\EFmigration.cs" />
+    <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ProductContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -235,8 +242,14 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611170242235_Product DB.resx">
-      <DependentUpon>201611170242235_Product DB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611170450442_FirstMigration.resx">
+      <DependentUpon>201611170450442_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170453320_SecondMigration.resx">
+      <DependentUpon>201611170453320_SecondMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170456242_ThirdMigration.resx">
+      <DependentUpon>201611170456242_ThirdMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -255,9 +268,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2065</DevelopmentServerPort>
+          <DevelopmentServerPort>2076</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2065/</IISUrl>
+          <IISUrl>http://localhost:2076/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
