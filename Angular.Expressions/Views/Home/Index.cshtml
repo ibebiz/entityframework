@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularExpression</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    </head>
+<body ng-app style="background-color:{{myCol}}"  >
+
+    <div ng-app>
+        <p style="text-align:{{myCol}}">My first expression: {{ 5 + 5 }}</p>
+        <p>Change the value of the input field:</p>
+
+        <div>
+
+            <input style="color:{{myCol}} " ng-model="myCol" value="{{myCol}}">
+
+        </div>
+        <p ng-init="quantity=1;cost=5">Total in dollar: {{ quantity * cost }}</p>
+        <p ng-init="firstName='John';lastName='Doe'">The name is {{ firstName + " " + lastName }}</p>
+        <p ng-init="firstName='John';lastName='Doe'">The name is <span ng-bind="firstName + ' ' + lastName"></span></p>
+        <p ng-init="person={firstName:'John',lastName:'Doe'}">The last name is {{ person.lastName }}</p>
+        <p ng-init="person={firstName:'John',lastName:'Doe'}">The last name is <span ng-bind="person.lastName"></span></p>
+        <p ng-init="points=[1,2,3,4,5]">The third result is <span ng-bind="points[3]"></span></p>
+       
+
+
+
+</body>
+    
+</html>
