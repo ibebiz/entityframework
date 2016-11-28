@@ -1,0 +1,62 @@
+﻿
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<body>
+
+    <div ng-app="myApp" ng-controller="myCtrl" ng-init="firstName1='John'">
+
+        <p>Input something in the input box:</p>
+        <p>Name: <input type="text" ng-model="name"></p>
+        <p ng-bind="name"></p>
+
+
+        @*ng-model phải nằm trong thẻ có value*@
+        <p>Name: <input type="search" ng-model="name"></p>
+
+
+        @*ng-bind nằm trong thẻ không có giá trị value*@
+        <p>The name is <span ng-bind="firstName1"></span></p>
+
+        @*{{???}} không nằm trong thẻ*@
+        <p>The name is {{ firstName1 }}</p>
+
+
+        <p>Try to change the names.</p>
+
+        <div>
+
+            First Name: <input type="text" ng-model="firstName"><br>
+            Last Name: <input type="text" ng-model="lastName"><br>
+            <br>
+            Full Name: {{firstName + " " + lastName}}
+
+        </div>
+
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function ($scope) {
+                $scope.firstName = "John";
+                $scope.lastName = "Doe";
+            });
+        </script>
+    </div>
+
+
+
+   
+
+
+
+</body>
+
+</html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+ 
+
+</body>
+</html>
