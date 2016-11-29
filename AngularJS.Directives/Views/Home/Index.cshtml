@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <div ng-app="myApp" >
+        <abc></abc>
+
+        <div abc></div>
+
+        <script>
+            var app = angular.module("myApp", []);
+            app.directive("abc", function () {
+                return {
+                    restrict: "E",
+                    template: "<h1>Made by a directive!</h1>"
+                };
+
+            });
+            app.directive("abc", function () {
+                return {
+                    restrict: "A",
+                    template: "<h1>Made by a directive1!</h1>"
+                };
+
+            });
+        </script>
+
+        <div ng-init="name=['Jani','Hege','Kai']">
+            <p>Looping with ng-repeat:</p>
+            <ul>
+                <li ng-repeat="x in name">
+                    {{ x }}
+                </li>
+            </ul>
+        </div>
+
+        <h2>Cost Calculator</h2>
+
+        Quantity: <input type="number" ng-model="quantity">
+        Price: <input type="number" ng-model="price">
+
+        <p><b>Total in dollar:</b> {{quantity * price}}</p>
+
+
+
+        <div  ng-init="names=[
+{name:'Jani',country:'Norway'},
+{name:'Hege',country:'Sweden'},
+{name:'Kai',country:'Denmark'}]">
+
+            <p>Looping with objects:</p>
+            <ul>
+                <li ng-repeat="x in names">
+                    {{ x.name + ', ' + x.country }}
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+</html>
