@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <style>
+            input.ng-invalid {
+                background-color: red;
+            }
+        </style>
+        
+        
+         <div>
+            Name 2: <input ng-model="name">
+            <h1>You entered: {{name}}</h1>
+        </div>
+
+        <form  name="myForm">
+            email:
+            <input type="email" name="myAddress" ng-model="name" required>
+            <span ng-show="myForm.myAddress.$error.email">Không Đúng Dạng Chuẩn</span>             
+           
+            <h1>Status</h1>
+            <p>Dạng Chuẩn: <span ng-show="myForm.myAddress.$error.email"> @@gmail.com</span>
+                <span ng-show="myForm.myAddress.$valid"> Đúng Chuẩn</span>
+              </p>
+          
+
+        </form>
+
+     
+
+     
+
+
+        <p>Change the name inside the input field, and you will see the name in the header changes accordingly.</p>
+
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.name = "Doe@@gmail.com";
+        });
+    </script>
+
+    <p>Use the ng-model directive to bind the value of the input field to a property made in the controller.</p>
+
+</body>
+</html>
